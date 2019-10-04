@@ -1,0 +1,53 @@
+//Faça um algoritmo que imprima números inteiros de n a 1;
+//for(let n =10; n>= 1; n--){
+   // console.log(n);
+//}
+
+
+//Faça um algoritmo que imprima números inteiros de n a 1;
+for(let n = 24; n >= 10; n--){
+    console.log(n);
+}
+
+for(let i = 1; i <=20; i++){
+    if(i % 2 === 1){
+        console.log(i)
+    }
+}
+
+
+
+//Faça um algoritmo que imprima apenas os números ímpares de 1 a 100; (do-while)
+let num = 1
+
+do{
+    if(num % 2 === 1){
+        console.log(num)
+    }
+    num++
+}
+while(num <= 100)
+ 
+
+
+// Dados dois números calcule o MDC deles.
+let x = 90;
+let y = 54;
+let divisor = 2;
+let mdc = 1;
+
+while(x > 1 && y > 1){
+    if(x % divisor === 0 && y % divisor === 0){
+        mdc *= divisor; // mdc = mdc * divisor;
+        x /= divisor; // x = x/divisor;
+        y /= divisor; // y = y/divisor;        
+    } else if (x % divisor === 0){
+        x /= divisor;
+    } else if (y % divisor === 0){
+        y = y / divisor; // y /= divisor;
+    } else{
+        divisor++;
+    }
+}
+
+console.log('MDC:' + mdc);
